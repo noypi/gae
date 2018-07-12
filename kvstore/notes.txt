@@ -1,0 +1,9 @@
+---- gen key1
+< ><\x00><nodename(printable string)><\x00><nodeid>
+nodeid => 4 bytes
+nodename => ex, namespace<\x01> <some key>[keys separator is \x02]
+                  => some key ex, userid...etc.
+
+--- with key2
+<nodeid><key2(limited length)><\x00><short meta><value(limited length=500 - len(key2) - 5)>
+.....[4 bytes][no delim][key2(printable string)][delim][value(printable string)]
