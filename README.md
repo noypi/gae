@@ -1,2 +1,3 @@
-# gae
-Golang AppEngine made easy
+# Creating new project
+
+see: https://github.com/noypi/clitools
